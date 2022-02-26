@@ -7,7 +7,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).on("keypress click" , function() {
+$(document).on(" click","#level-title" , function()  {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
